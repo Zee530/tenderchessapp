@@ -1,14 +1,12 @@
 import './App.css';
+import image from './images/logo.jpg'
 
 function App() {
   return (
     <div>
-      <h1>TENDER CHESS WEBAPP</h1>
-      <ol>
-        <li>NAVBAR</li>
-        <li>SIDEBAR</li>
-        <li>CENTRAL AREA</li>
-      </ol>
+      <img src={image} alt='logo' height='200px' width='auto'/>
+      <p className='title'>TENDER CHESS COMPETITON WEBAPP</p>
+      <p className='title2'>COMING SOON...</p>
     </div>
   );
 }
