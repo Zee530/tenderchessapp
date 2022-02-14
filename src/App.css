@@ -1,23 +1,38 @@
-body{
-  background-image: url("images/Checkerboard-Desktop-Pictures.jpg");
-  /* background-repeat: repeat-y;*/
-  background-size: 90%;
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
+.title1{
+    /* color: white; */
+    /* font-weight: bold; */
+    font-size: 30px;
+    font-family: 'Ultra', serif;
+    margin-left: 20px;
+    /* margin-bottom: 14px; */
 }
 
-.title{
-  font-weight: bolder;
-  font-size: 50px;
-  padding-left: 20px;
-  color: #c68c53;
-  margin-top: -10%;
-  margin-left: 10%;
+.btn-xxl {
+    height: 100px;
+    width: 270px;
+    background-color: #e6ac00;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.title2{
-  font-weight: bolder;
-  font-size: 30px;
-  padding-left: 20px;
-  color: #c68c53;
-  margin-top: -3%;
-  margin-left: 10%;
+.btn-xxl:hover {
+    font-weight: 1000;
+    background-color: #e6ac00;
+}
+
+.btn-xxl:focus {
+    background-color: #e6ac00;
+}
+
+.button1 {
+    float: left;
+    margin-left: 200px;
+}
+
+.button2 {
+    float: right;
+    margin-right: 200px;
 }
