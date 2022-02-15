@@ -27,6 +27,24 @@
     background-color: #e6ac00;
 }
 
+.btn-logger {
+    background-color: #e6ac00;
+    margin-left: 150px;
+    width: 150px;
+    height: 60px;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-logger:hover {
+    font-weight: 1000;
+    background-color: #e6ac00;
+}
+
+.btn-logger:focus {
+    background-color: #e6ac00;
+}
+
 .button1 {
     float: left;
     margin-left: 200px;

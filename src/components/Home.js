@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 import image from '../images/chess-2730034_1920.jpg'
 // import LoginModal from './LoginModal'
 import Modal from 'react-bootstrap/Modal'
-
+import Form from 'react-bootstrap/Form'
 
 function Home() {
     const [adminShow, setadminShow] = useState(false);
@@ -32,7 +32,17 @@ function Home() {
                 </Modal.Header>
 
                 <Modal.Body>
-                    Form
+                    <Form>
+                        <Form.Group>
+                            <Form.Label>Username</Form.Label>
+                            <Form.Control type='text'/>
+                        </Form.Group>
+                        <Form.Group className='mb-3'>
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type='password'/>
+                        </Form.Group>
+                        <Button size='logger'>LOGIN</Button>
+                    </Form>
                 </Modal.Body>
             </Modal>
 
@@ -46,7 +56,17 @@ function Home() {
                 </Modal.Header>
 
                 <Modal.Body>
-                    Form
+                    <Form>
+                        <Form.Group>
+                            <Form.Label>Contestant ID</Form.Label>
+                            <Form.Control type='text'/>
+                        </Form.Group>
+                        <Form.Group className='mb-3'>
+                            <Form.Label>Contestant Password</Form.Label>
+                            <Form.Control type='password'/>
+                        </Form.Group>
+                        <Button size='logger'>LOGIN</Button>
+                    </Form>
                 </Modal.Body>
             </Modal>
         </Container>
