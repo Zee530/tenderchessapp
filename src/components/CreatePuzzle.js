@@ -1,33 +1,67 @@
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
 
 function createPuzzle() {
     return (
         <>
-            <Form>
-                <Form.Group>
-                    <Form.Label>Text Question</Form.Label>
-                    <Form.Control type='text'/>
-                </Form.Group>
-                <Form.Group className='mb-3'>
-                    <Form.Label>FEN Code Question</Form.Label>
-                    <Form.Control type='text'/>
-                </Form.Group>
-                <Form.Group className='mb-3'>
-                    <Form.Label>FEN Code Solution</Form.Label>
-                    <Form.Control type='text'/>
-                </Form.Group>
-                <Form.Group className='mb-3'>
-                    <Form.Label>Question Bank</Form.Label>
-                    <Form.Select>
-                        <option>Select bank</option>
-                        <option>Bank 1</option>
-                        <option>Bank 2</option>
-                        <option>Bank 3</option>
-                    </Form.Select>
-                </Form.Group>
-                <Button size='logger'>CREATE</Button>
-            </Form>
+        <Row>
+            <Col></Col>
+            <Col md={9}>
+                <Card>
+                    <Card.Header style={{backgroundColor:'#e6ac00'}}><h3 className='text-center'>CREATE PUZZLE</h3></Card.Header>
+                    <Card.Body>
+                        <Form>
+                            <Form.Group className='mt-5 mb-5'>
+                                <Row>
+                                    <Col></Col>
+                                    <Col md={3}><Form.Label>Text Question</Form.Label></Col>
+                                    <Col md={6}><Form.Control type='text'/></Col>
+                                    <Col></Col>
+                                </Row>
+                            </Form.Group>    
+                            <Form.Group className='mb-5'>
+                                <Row>
+                                    <Col></Col>
+                                    <Col md={3}><Form.Label>FEN Code Question</Form.Label></Col>
+                                    <Col md={6}><Form.Control type='text'/></Col>
+                                    <Col></Col>
+                                </Row>
+                            </Form.Group>
+                            <Form.Group className='mb-5'>
+                                <Row>
+                                    <Col></Col>
+                                    <Col md={3}><Form.Label>FEN Code Solution</Form.Label></Col>
+                                    <Col md={6}><Form.Control type='text'/></Col>
+                                    <Col></Col>
+                                </Row>
+                            </Form.Group>
+                            <Form.Group className='mb-5'>
+                                <Row>
+                                    <Col></Col>
+                                    <Col md={3}><Form.Label>Question Bank</Form.Label></Col>
+                                    <Col md={6}><Form.Select>
+                                    <option>Select bank</option>
+                                    <option>Bank 1</option>
+                                    <option>Bank 2</option>
+                                    <option>Bank 3</option>
+                                </Form.Select></Col>
+                                    <Col></Col>
+                                </Row>
+                            </Form.Group>
+                                <Row>
+                                    <Col></Col>
+                                    <Col><Button size='logger'>CREATE</Button></Col>
+                                    <Col></Col>
+                                </Row>
+                        </Form>
+                    </Card.Body>
+                </Card>
+            </Col>
+            <Col></Col>
+        </Row>
         </>
     )
 }
