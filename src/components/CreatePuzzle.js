@@ -17,6 +17,14 @@ function createPuzzle() {
                             <Form.Group className='mt-5 mb-5'>
                                 <Row>
                                     <Col></Col>
+                                    <Col md={3}><Form.Label>Puzzle Code</Form.Label></Col>
+                                    <Col md={6}><Form.Control type='text' disabled/></Col>
+                                    <Col></Col>
+                                </Row>
+                            </Form.Group>
+                            <Form.Group className='mb-5'>
+                                <Row>
+                                    <Col></Col>
                                     <Col md={3}><Form.Label>Text Question</Form.Label></Col>
                                     <Col md={6}><Form.Control type='text'/></Col>
                                     <Col></Col>
@@ -41,12 +49,12 @@ function createPuzzle() {
                             <Form.Group className='mb-5'>
                                 <Row>
                                     <Col></Col>
-                                    <Col md={3}><Form.Label>Question Bank</Form.Label></Col>
+                                    <Col md={3}><Form.Label>Question Pool</Form.Label></Col>
                                     <Col md={6}><Form.Select>
                                     <option>Select bank</option>
-                                    <option>Bank 1</option>
-                                    <option>Bank 2</option>
-                                    <option>Bank 3</option>
+                                    <option>Pool 1</option>
+                                    <option>Pool 2</option>
+                                    <option>Pool 3</option>
                                 </Form.Select></Col>
                                     <Col></Col>
                                 </Row>

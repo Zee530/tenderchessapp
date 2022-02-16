@@ -6,6 +6,8 @@ import Home from './components/Home'
 import AdminHome from './components/AdminHome'
 import ContestHome from './components/ContestHome'
 import CreatePuzzle from './components/CreatePuzzle'
+import ViewPuzzle from './components/ViewPuzzle'
+import StartPool from './components/StartPool'
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       {/* <Home /> */}
       {/* <AdminHome /> */}
       {/* <ContestHome /> */}
-      <CreatePuzzle />
+      {/* <CreatePuzzle /> */}
+      {/* <ViewPuzzle /> */}
+      <StartPool />
     </div>
   );
 }
