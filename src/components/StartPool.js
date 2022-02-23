@@ -3,10 +3,13 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import { Outlet } from 'react-router-dom'
+import Navbar2 from './Navbar2'
 
 function startPool() {
     return (
         <>
+        <Navbar2 />
         <Row>
             <Col></Col>
             <Col md={9}>
@@ -39,6 +42,7 @@ function startPool() {
             </Col>
             <Col></Col>
         </Row>
+        <Outlet />
         </>
     )
 }

@@ -7,6 +7,8 @@
     font-family: 'Ultra', serif;
     margin-left: 20px;
     /* margin-bottom: 14px; */
+    text-decoration: none;
+    color: black;
 }
 
 .btn-xxl {
@@ -57,4 +59,8 @@
 
 h4 {
     font-weight: bold;
+}
+
+tr:hover {
+    background-color: #e6ac00;
 }
