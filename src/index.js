@@ -12,6 +12,7 @@ import CreatePuzzle from './components/CreatePuzzle'
 import ViewPuzzle from './components/ViewPuzzle'
 import StartPool from './components/StartPool'
 import ViewScore from './components/ViewScore'
+import Board from './components/Board'
 
 {/* <React.StrictMode>
       <App />
@@ -26,8 +27,8 @@ ReactDOM.render(
         <Route path='view' element={<ViewPuzzle />}/>
         <Route path='contestant' element={<ContestHome />}/>
         <Route path='pool' element={<StartPool />}/>
-        <Route path='score' element={<ViewScore />}/>    
-                          
+        <Route path='score' element={<ViewScore />}/> 
+        <Route path='board' element={<Board />}/>                            
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

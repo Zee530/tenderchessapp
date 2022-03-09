@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import Navbar2 from './Navbar2'
 
 function startPool() {
@@ -32,7 +32,7 @@ function startPool() {
                             </Form.Group>                                  
                                 <Row>
                                     <Col></Col>
-                                    <Col><Button size='logger'>BEGIN</Button></Col>
+                                    <Col><Link to='/board'><Button size='logger' >BEGIN</Button></Link></Col>
                                     <Col></Col>
                                     <Col></Col>
                                 </Row>
