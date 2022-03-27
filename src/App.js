@@ -16,9 +16,23 @@ import Form from 'react-bootstrap/Form'
 import { Outlet } from 'react-router-dom'
 import Navbar1 from './components/Navbar1'
 
-function App() {
+function App(props) {
     const [adminShow, setadminShow] = useState(false);
     const [contestantShow, setcontestantShow] = useState(false)
+    // const [userName, setUserName] = useState({
+    //     adminName: "",
+    //     contestName:""
+    // })
+    let userName = document.getElementById('naming')
+    // console.log(userName.adminName)
+    // console.log(userName.contestName)
+    // const handleChange = ({ target: { name, value } }) => {
+    //     setUserName (prev => ({...prev, [name]: value }))
+    // }
+
+    function navbarPush() {
+        localStorage.setItem("username", userName.value)
+    }
     return (
     <>
         {/* <LoginModal /> */}
@@ -82,13 +96,16 @@ function App() {
                     <Form>
                         <Form.Group>
                             <Form.Label>Username</Form.Label>
-                            <Form.Control type='text'/>
+                            <Form.Control type='text' id='naming' name='adminName' 
+                            // value={userName.adminName} onChange={handleChange}
+                            />
+                            {/* <Form.Control type='text' name={props.name} value={props.value} onChange={props.onChange}/> */}
                         </Form.Group>
                         <Form.Group className='mb-3'>
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type='password'/>
+                            <Form.Control type='password' disabled={true}/>
                         </Form.Group>
-                        <Link to='/admin'><Button size='logger'>LOGIN</Button></Link>
+                        <Link onclick='navbarPush()' to='/admin'><Button size='logger'>LOGIN</Button></Link>
                     </Form>
                 </Modal.Body>
             </Modal>
@@ -106,11 +123,13 @@ function App() {
                     <Form>
                         <Form.Group>
                             <Form.Label>Contestant ID</Form.Label>
-                            <Form.Control type='text'/>
+                            <Form.Control type='text' name='contestName' 
+                            // value={userName.contestName} onChange={handleChange}
+                            />
                         </Form.Group>
                         <Form.Group className='mb-3'>
                             <Form.Label>Contestant Password</Form.Label>
-                            <Form.Control type='password'/>
+                            <Form.Control type='password' disabled={true}/>
                         </Form.Group>
                         <Link to='/contestant'><Button size='logger'>LOGIN</Button></Link>
                     </Form>

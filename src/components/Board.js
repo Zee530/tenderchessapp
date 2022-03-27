@@ -4,10 +4,17 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import { Outlet } from 'react-router-dom'
 import Navbar2 from './Navbar2'
+import { Chess } from 'chess.js'
+
 import Chessboard from 'chessboardjsx'
 
 function board(){
     // var board1 = ChessBoard('myBoard')
+    // const styler = {
+    //     backgroundColor: 'grey',
+    //     size: 'xl'
+    // }
+    // var board = Chessboard('myBoard')
     return (
         <>
             <Navbar2 />
@@ -20,7 +27,12 @@ function board(){
                             <Row>
                                 <Col/>
                                 <Col>
-                                    <Chessboard position='3krb2/2p2p2/8/8/8/8/3PPP2/3RKNQP w - - 25 80'/> 
+                                    <Chessboard position='start'/>
+                                    <Row>
+                                        <Col/>
+                                        <Col md={10}><Button size='logger' className='mt-4'>SUBMIT</Button></Col>     
+                                        <Col/>
+                                    </Row> 
                                 </Col>
                                 <Col/>
                             </Row>                           
